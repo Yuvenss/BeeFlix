@@ -24,8 +24,8 @@
                     Category: <a href="/genre/{{ $movie->id }}" class="text-decoration-none">{{ $movie->genre->name }}</a>
                     </p>
                     <p class="card-text fs-4 fw-bold mt-4">EPISODE</p>
-                    <table class="table table-info table-striped table-hover table-bordered mb-4">
-                        <thead class="table-primary">
+                    <table class="table table-striped table-hover table-bordered mb-4">
+                        <thead class="table" style="background-color: rgb(255, 204, 110)">
                             <tr>
                             <th scope="col">Episode</th>
                             <th scope="col">Title</th>

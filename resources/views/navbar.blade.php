@@ -5,6 +5,6 @@
 </nav>
 
 <div class="button mt-4 mb-4 ms-3" style="display: flex">
-    <a class="btn btn-dark fs-5" href="/" role="button">< KEMBALI</a>
+    <a class="btn btn-dark fs-5" href="{{ url()->previous() }}" role="button">< KEMBALI</a>
     <a class="btn btn-light fs-5" href="/" role="button">LIHAT SEMUA FILM</a>
 </div>
