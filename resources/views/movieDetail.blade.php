@@ -21,7 +21,7 @@
                 <p class="card-text fs-5" style="color: rgb(126, 202, 11)">Rating: {{ $movie->rating }}/10</p>
                 <p class="card-text">{{ $movie->description }}</p>
                 <p class="card-text">
-                    Category: <a href="/genre/{{ $movie->id }}" class="text-decoration-none">{{ $movie->genre->name }}</a>
+                    Category: <a href="/genre/{{ $movie->genre_id }}" class="text-decoration-none">{{ $movie->genre->name }}</a>
                     </p>
                     <p class="card-text fs-4 fw-bold mt-4">EPISODE</p>
                     <table class="table table-striped table-hover table-bordered mb-4">
