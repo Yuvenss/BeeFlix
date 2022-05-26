@@ -20,7 +20,7 @@
                     @foreach ($movies as $movie)
                         @if ($movie->genre_id == $genre->id)
                             <div class="card">
-                                <img src="{{ $movie->photo }}" class="card-img-top" style="height: 700px">
+                                <img src="{{ $movie->photo }}" class="card-img-top" style="height: 650px">
                                 <div class="card-body" style="background-color: rgb(205, 246, 255)">
                                     <h5 class="card-title text-center fs-2">{{ $movie->title }}</h5>
                                 </div>
