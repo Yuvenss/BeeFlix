@@ -12,8 +12,8 @@
 
     @foreach ($genres as $genre)
       <div class="card" style="background-color: rgb(255, 240, 191)">
-        <h5 class="card-header" style="background-color: rgb(253, 216, 32)">
-          <a href="/genre/{{ $genre->id }}" class="text-decoration-none fs-3" style="color: black">{{ $genre->name }}</a>
+        <h5 class="card-header text-center" style="background-color: rgb(253, 216, 32)">
+          <a href="/genre/{{ $genre->id }}" class="text-decoration-none fs-2" style="color: black">{{ $genre->name }}</a>
         </h5>
 
         <div class="card-body">
