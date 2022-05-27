@@ -6,14 +6,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>BeeFlix</title>
   </head>
-  <body style="background-color: rgb(255, 240, 191)">
+  <body style="background-color: #f2f2c5">
 
     @include('navbar')
 
     @foreach ($genres as $genre)
-      <div class="card" style="background-color: rgb(255, 240, 191)">
-        <h5 class="card-header text-center" style="background-color: rgb(253, 216, 32)">
-          <a href="/genre/{{ $genre->id }}" class="text-decoration-none fs-2" style="color: black">{{ $genre->name }}</a>
+      <div class="card" style="background-color: #f2f2c5">
+        <h5 class="card-header text-center" style="background-color: #f2a950">
+          <a href="/genre/{{ $genre->id }}" class="text-decoration-none fs-2" style="color: white">{{ $genre->name }}</a>
         </h5>
 
         <div class="card-body">
@@ -21,7 +21,7 @@
 
             @foreach ($movies as $movie)
               @if ($movie->genre_id == $genre->id)
-                <div class="card">
+                <div class="card ms-1 me-1">
                   <img src="{{ $movie->photo }}" class="card-img-top" style="height: 650px">
                   <div class="card-body" style="background-color: rgb(205, 246, 255)">
                     <h5 class="card-title text-center fs-2">{{ $movie->title }}</h5>

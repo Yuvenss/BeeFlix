@@ -6,7 +6,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <title>BeeFlix-{{ $movie->title }}</title>
     </head>
-    <body style="background-color: rgb(255, 240, 191)">
+    <body style="background-color: #f2f2c5">
 
         @include('navbar')
 
@@ -25,7 +25,7 @@
                     </p>
                     <p class="card-text fs-4 fw-bold mt-4">EPISODE</p>
                     <table class="table table-striped table-hover table-bordered mb-4">
-                        <thead class="table" style="background-color: rgb(255, 204, 110)">
+                        <thead class="table" style="background-color: #f2a950">
                             <tr>
                             <th scope="col">Episode</th>
                             <th scope="col">Title</th>
