@@ -34,7 +34,7 @@
                         <tbody>
                             @foreach ($episodes as $episode)
                                 <tr>
-                                <td>Episode No. {{ $episode->episode }}</td>
+                                <td>Episode {{ $episode->episode }}</td>
                                 <td>{{ $episode->title }}</td>
                                 </tr>
                             @endforeach
